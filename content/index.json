@@ -1,0 +1,70 @@
+{
+  "name": "Wadi Rum Tours",
+  "site": "www.wadirumrajatours.com",
+  "logo": "logo.svg",
+  "title": "Wadi Rum Tours",
+  "description": "Experience the magic of Wadi Rum",
+  "SEO": {
+    "locale": "en_US",
+    "twitteruser": "@mytag",
+    "author": "Raja",
+    "author_site": "Charles Cunningham",
+    "image": "logo.png"
+  },
+  "socialLinks": [
+    {
+      "src": "https://www.linkedin.com/",
+      "ico": "lab la-linkedin-in",
+      "enabled": false
+    },
+    {
+      "src": "https://github.com/wadi-rum-tours",
+      "ico": "lab la-github-alt",
+      "enabled": true
+    },
+    {
+      "src": "https://about.gitlab.com/",
+      "ico": "lab la-gitlab",
+      "enabled": false
+    },
+    {
+      "src": "https://twitter.com/",
+      "ico": "lab la-twitter",
+      "enabled": false
+    },
+    {
+      "src": "https://keybase.io/",
+      "ico": "lab la-keybase",
+      "enabled": false
+    },
+    {
+      "src": "https://www.reddit.com/",
+      "ico": "lab la-reddit",
+      "enabled": false
+    },
+    {
+      "src": "https://www.instagram.com/",
+      "ico": "lab la-instagram",
+      "enabled": false
+    },
+    {
+      "src": "https://www.facebook.com/",
+      "ico": "lab la-facebook-f",
+      "enabled": false
+    },
+    { "src": "", "ico": "", "enabled": false }
+  ],
+  "theme": {
+    "postsPerPage": 6,
+    "projsPerPage": 3,
+    "projsSort": "Date",
+    "projsSortValues": "Date, Name",
+    "tagsPerPage": 12,
+    "mathTypesetting": true,
+    "codeHighlighting": true,
+    "featuredPage": "Frame",
+    "featuredPageValues": "Bleed, Frame, None",
+    "colorScheme": "Earthliness",
+    "colorSchemeValues": "Earthliness, Simplicity, Technobeat"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "",
+  "image": {
+    "src": "",
+    "alt": "Post Image",
+    "citation": ""
+  },
+  "author": {
+    "name": "Ro Doe",
+    "url": "pages/about"
+  },
+  "dateCreated": "",
+  "dateModified": "",
+  "categories": ["Photography"],
+  "tags": ["Image", "Graphic Design"],
+  "featured": false,
+  "draft": true,
+  "articleBody": ""
+}

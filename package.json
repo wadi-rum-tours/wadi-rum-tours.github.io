@@ -1,0 +1,30 @@
+{
+  "name": "compendium-theme",
+  "version": "0.9.1",
+  "scripts": {
+    "style": "postcss styles/tailwind.source.css -o assets/tailwind.global.css",
+    "theme": "cp styles/$(grep -m 1 colorScheme content/index.json | awk '{ gsub(/[[:punct:]]/, \"\"); print $2 }').css assets/color-scheme.css",
+    "posttheme": "npm run style",
+    "prebuild": "NODE_ENV=production npm run style",
+    "build": "$(cd deploy && rm -rf functions/api && cp -r ../functions/api/ functions/)",
+    "postbuild": "plenti build",
+    "prepublish": "$(cd deploy && git add -A && git commit -q -m \"Publish static site\") &>/dev/null",
+    "publish": "$(cd deploy && git push -q -u origin main)",
+    "preview": "npx wrangler pages dev deploy/public --binding $(cat ./.env)"
+  },
+  "private": true,
+  "dependencies": {
+    "navaid": "^1.2.0",
+    "regexparam": "^1.3.0",
+    "svelte": "~3.38.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.2",
+    "daisyui": "^1.22.2",
+    "wrangler": "^0.0.15"
+  }
+}

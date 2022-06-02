@@ -1,0 +1,16 @@
+{
+  "build": "deploy/public",
+  "baseurl": "/compendium/",
+  "local": {
+    "port": 3000
+  },
+  "routes": {
+    "404": ":filename",
+    "index": ":paginate(totalPages)",
+    "pages": "pages/:filename",
+    "posts": "posts/:filename",
+    "projs": ":fields(route)/:paginate(totalProjPages)",
+    "tags": ":fields(route)",
+    "catgs": ":fields(route)"
+  }
+}
