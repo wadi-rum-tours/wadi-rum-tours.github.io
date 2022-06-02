@@ -1,0 +1,1 @@
+export let env={local:!1,baseurl:"/compendium/",cms:{repo:"",redirectUrl:"",appId:"",branch:""}}
